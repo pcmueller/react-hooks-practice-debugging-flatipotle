@@ -12,7 +12,9 @@ function App() {
   }
 
   const displayOrders = orders.map((order, idx) => {
-    <Order key={idx} {...order} />;
+    return (
+      <Order key={idx} {...order} />
+    )
   });
 
   return (
